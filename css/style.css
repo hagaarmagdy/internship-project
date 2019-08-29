@@ -9,6 +9,16 @@
 
 .header {
     overflow: hidden;
+    background: #fff;
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    transition: .5s
+}
+
+.changeHeight {
+    height: 100px;
+    box-shadow: 2px 2px 4px #000
 }
 
 .header-logo {
@@ -251,20 +261,14 @@ footer {
 }
 
 .footer-p1 {
-    width: 30%;
-    float: left;
     border-right: 1px solid #6D7886;
     height: 230px;
-    margin-right: 10px;
 }
 
 .footer-p2 {
-    width: 30%;
-    float: left;
     border-right: 1px solid #6D7886;
     overflow: hidden;
     height: 230px;
-    margin-right: 10px;
 }
 
 .footer-p2 ul {
@@ -275,10 +279,7 @@ footer {
 }
 
 .footer-p3 {
-    width: 30%;
-    float: left;
     height: 230px;
-    margin-right: 10px;
 }
 
 .footer-p3 img {
@@ -599,7 +600,7 @@ footer p {
     margin: 10px;
 }
 
-/*ABOUT US*/
+/*ABOUT US webpage*/
 
 /*header*/
 
@@ -646,9 +647,9 @@ footer p {
 
 .room-logos span {
     margin-right: 50px;
-    padding: 15px 0px;
     display: inline-block;
     width: 120px;
+    font-size: 11px;
 }
 
 .room-btn {
@@ -688,6 +689,7 @@ h2 {
 
 .hotel-staff .item {
     position: relative;
+    margin-right: 22px;
 }
 
 .hotel-staff {
@@ -775,7 +777,6 @@ h2 {
 
 /* GALLERY WEBPAGE */
 
-
 .gallery-list {
     overflow: hidden;
     font-family: arial;
@@ -821,9 +822,8 @@ h2 {
     height: 180px;
 }
 
-
-
 /* ACCOMODATION WEBPAGE */
+
 .acc-card {
     margin-bottom: 25px;
 }
@@ -883,15 +883,12 @@ h2 {
     color: white;
 }
 
-
-
-/*contact pages*/
-
+/*news pages*/
 
 .contact-col {
     width: 30%;
     float: left;
-    margin-right: 20px;
+    margin: 60px 20px 10px 0px;
 }
 
 .contact-body {
@@ -1006,13 +1003,35 @@ h2 {
     top: 0;
 }
 
+.news-btn {
+    background: #FF5B63;
+    border: none;
+    color: white;
+    padding: 5px;
+    font-size: 10px;
+    font-family: arial;
+    width: 80px;
+    margin: auto;
+    cursor: pointer;
+    display: block;
+    margin-bottom: 40px;
+}
+
 /*contact us webpage*/
-
-
 
 .contactus {
     display: flex;
     justify-content: space-between;
+    margin: 50px 0px;
+}
+
+.contactus h3 {
+    font-size: 15px;
+}
+
+.contactus-form {
+    padding: 10px 0px;
+    margin-left: 200px;
 }
 
 .contactus-form input[type=submit] {
@@ -1022,23 +1041,283 @@ h2 {
     color: white;
     padding: 5px 10px;
     font-size: 10px;
+    width: 90px;
 }
 
 .contactus-form input {
     width: 200px;
     height: 30px;
+    margin-bottom: 20px;
+    margin-right: 8px;
+    font-size: 12px;
+    font-family: arial;
 }
 
 .msg {
-    width: 500px !important;
-    height: 150px !important;
+    width: 420px !important;
+    height: 100px !important;
 }
 
 .contactus-dets {
     color: #787C7F;
+    margin-right: 200px;
+    padding: 10px;
 }
 
 .contactus-dets h3 {
     color: #383838;
-    margin-right: 50px !important;
+}
+
+/*booking webpage*/
+
+.book-list {
+    margin: 40px;
+    overflow: hidden;
+}
+
+.book-list ul {
+    list-style: none;
+    /*    display: flex;*/
+    justify-content: space-between;
+    padding: 7px;
+    margin-bottom: 40px;
+}
+
+.book-list li {
+    border-bottom: 5px solid #E9E9E9;
+    /*    flex: 1;*/
+}
+
+.book-list li:hover {
+    border-bottom: 5px solid #FF5751;
+}
+
+.book-no {
+    border: 1px solid black;
+    border-radius: 50%;
+    padding: 7px;
+    margin-bottom: 10px;
+}
+
+.book-no:hover {
+    background: #FF5751;
+    color: white;
+    border: none;
+}
+
+.book-3 {
+    width: 30%;
+    font-family: arial;
+    margin-right: 3%;
+    font-size: 11px;
+    padding: 7px;
+    margin-bottom: 25px;
+}
+
+.book-4 {
+    width: 20%;
+    font-family: arial;
+    margin-right: 4%;
+    font-size: 11px;
+    padding: 7px;
+    margin-bottom: 25px;
+}
+
+.book-1 {
+    width: 100%;
+    font-family: arial;
+    font-size: 11px;
+    padding: 7px;
+    height: 50px;
+}
+
+.book-next {
+    background: #FF5B63;
+    border: none;
+    color: white;
+    float: right;
+    padding: 5px;
+    font-size: 10px;
+    font-family: arial;
+    width: 60px;
+    margin-bottom: 80px;
+    cursor: pointer;
+}
+
+.book-back {
+    background: #E0E0E0;
+    border: none;
+    color: white;
+    float: left;
+    padding: 5px;
+    font-size: 10px;
+    font-family: arial;
+    width: 60px;
+    margin-bottom: 80px;
+    cursor: pointer;
+}
+
+.book-done p {
+    color: #626262;
+}
+
+.book-done {
+    width: 50%;
+    font-family: arial;
+    float: left
+}
+
+.book-confirm {
+    background: #83C152;
+    color: white !important;
+    height: 50px;
+    padding-top: 10px;
+    font-family: arial;
+}
+
+.book-card {
+    font-family: arial;
+    font-size: 12px;
+    margin-bottom: 30px;
+}
+
+.book-card input {
+    padding: 6px;
+    margin-right: 17px;
+}
+
+.book-card input[type=number] {
+    width: 16%;
+}
+
+.book-card input[type=text] {
+    width: 25%;
+}
+
+.cvv {
+    width: 8% !important;
+}
+
+.book-card input[type=submit] {
+    background: #85D656;
+    border: none;
+    color: white;
+    float: right;
+    padding: 7px;
+    font-size: 10px;
+    font-family: arial;
+    width: 80px;
+    cursor: pointer;
+}
+
+.contact-map {
+    margin-top: 40px;
+}
+
+.book-table {
+    float: right;
+    width: 50%;
+}
+
+.book-table table {
+    float: right;
+    border: 1px solid #E3E3E3
+}
+
+.book-table table td {
+    padding: 10px;
+    font-family: arial;
+    font-size: 12px;
+    text-align: center;
+    border: 1px solid #E3E3E3
+}
+
+.booking-table {
+    text-align: left;
+    font-family: arial;
+
+}
+
+.booking-table h4 {
+    font-size: 15px;
+}
+
+.booking-table span {
+    color: #909090;
+    font-family: arial;
+    font-size: 11px;
+}
+
+.table-light {
+    color: #909090
+}
+
+.table-bottom h4 {
+    font-size: 14px;
+    font-family: arial;
+}
+
+.table-bottom {
+    width: 50%;
+    float: right;
+    text-align: right;
+    display: inline-block;
+
+}
+
+.table-bottom span {
+    color: #83C152;
+}
+
+.table-text {
+    float: left;
+    margin-left: 240px;
+}
+
+/**/
+
+
+/* Dropdown Button */
+.dropbtn {
+    border: none;
+    background: white;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
 }
